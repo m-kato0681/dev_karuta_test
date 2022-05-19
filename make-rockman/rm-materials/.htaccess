@@ -1,0 +1,27 @@
+AuthUserFile /var/www/vhosts/artec-kk.co.jp/httpdocs/dl/make-rockman/rm-materials/.htpasswd
+AuthName "Please enter your ID and password"
+AuthType Basic
+require valid-user 
+
+# Redirect UserAgent
+RewriteEngine On
+
+# OS
+SetEnvIfNoCase User-Agent "Windows" ua_os=windows
+SetEnvIfNoCase User-Agent "Mac.*OS" ua_os=macos
+SetEnvIfNoCase User-Agent "Linux" ua_os=linux
+SetEnvIfNoCase User-Agent "SunOS" ua_os=linux
+SetEnvIfNoCase User-Agent "BSD" ua_os=linux
+SetEnvIfNoCase User-Agent "Android" ua_os=android
+SetEnvIfNoCase User-Agent "Sleipnir" ua_os=sleipnir
+SetEnvIfNoCase User-Agent "Nintendo" ua_os=game
+SetEnvIfNoCase User-Agent "PlayStation" ua_os=game
+
+# base path
+RewriteBase /
+
+RewriteCond %{REQUEST_FILENAME} makeROCKMAN\.zip
+# user-agent condition
+RewriteCond %{ENV:ua_os} macos
+# redirect
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/dl/make-rockman/rm-materials/makeROCKMAN-mac\.zip [R=301,L]

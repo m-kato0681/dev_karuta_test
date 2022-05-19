@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	background-color: white;
+}
+
+.titleback {
+	background-color: #fff100;
+}
+
+footer {
+	background-color: black;
+	margin-top: 45px;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	color: white;
+	}
+.psyamei {
+	font-size: 16px;
+}
+
+.yellowback {
+	background-color: #fff100;
+	
+}
+
+.mainimg {
+	margin-bottom: 45px;
+	margin-top: 45px;
+}
+
+.manimg {
+	margin-bottom: 75px;
+	margin-top: 45px;
+}
+
+.title1st {
+	margin-bottom: 15px;
+	margin-top: 60px;
+}
+
+.text2nd {
+	margin-bottom: 20px;
+	margin-top: 60px;
+}
+
+.text3rd {
+	margin-bottom: 80px;
+	margin-top: 10px;
+}
+
+.title2nd {
+	margin-bottom: 45px;
+	margin-top: 80px;
+}
+
+.text4th {
+	margin-top: 60px;
+}

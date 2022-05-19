@@ -1,0 +1,11 @@
+@startuml
+ 
+title State Transition Diagram for Tracking_Cam
+ 
+[*] --> Wait: mouse click(target lockon)
+Wait -> Ready: buffer 1 frame
+Ready --> SaveVid: fy_diff >= 8.0
+SaveVid --> Wait: time > 25sec
+SaveVid --> [*]: enter "esc" key
+ 
+@enduml

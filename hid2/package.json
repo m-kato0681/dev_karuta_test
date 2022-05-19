@@ -1,0 +1,26 @@
+{
+  "name": "cleaner2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "rebuild32": "electron-rebuild -a ia32",
+    "build32": "copy index.html src\\ && electron-packager . studuino_bit --overwrite --platform=win32 --arch=ia32 --electronVersion=2.0.12 --icon=studuino_bit.ico --appVersion=0.9.4 --appCopyright=Copyright_2019_Artec_Co.,Ltd",
+    "build64": "copy index.html src\\ && electron-packager . studuino_bit --overwrite --platform=win32 --arch=x64 --electronVersion=2.0.12 --icon=studuino_bit.ico",
+    "rebuild": "electron-rebuild",
+    "electron-rebuild": "electron-rebuild",
+    "postinstall": "npm run rebuild"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-hid": "^0.7.9"
+  },
+  "devDependencies": {
+    "electron": "^5.0.1",
+    "electron-builder": "^20.44.4",
+    "electron-rebuild": "^1.8.4"
+  }
+}
