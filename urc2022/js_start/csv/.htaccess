@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^test.csv$ https://www.urc21.org/test/urc2022_votingsite/standby_screen.php [L,R=301]

@@ -1,0 +1,308 @@
+@charset "utf-8";
+/* CSS Document */
+/*ヘッダ*/
+.title_img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/*ヘッダリキッドしたときに文字がカブらないように*/
+.mainBox {
+	position: relative;
+}
+.subBox {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+/*グローバルナビ*/
+.naviback {
+	background-color: #da1a36;
+	width: 100%;
+}
+li.pill a {
+	background-color: #da1a36;
+	color: #37060e;
+	font-size: 16px;
+	border-radius: 0px;
+}
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+	color: white;
+	background-color: #da1a36;
+	font-size: 16px;
+	border-radius: 0px;
+}
+.pill a:hover, .pill a:focus {
+	background-color: #da1a36 !important;
+}
+/*img関連*/
+a:hover img {
+	opacity: 0.5;
+	-moz-opacity: 0.5;
+	filter: alpha(opacity = 50);
+}
+.img_inline-block {
+	display: inline-block;
+}
+.img_division_title {
+	margin-top: 45px;
+	margin-bottom: 15px;
+}
+.img_division {
+	margin-top: 15px;
+}
+.img_urc_logo_02 {
+	margin-top: 60px;
+	margin-bottom: 0px;
+}
+.img_official_robot_title {
+	margin-top: 60px;
+	margin-bottom: 15px;
+}
+.img_margin {
+	margin-top: 15px;
+	margin-bottom: 30px;
+}
+.img_sponsor_margin {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+/*メインのバックグラウンド画像*/
+.main_back {
+	background: #ddd url(../images/top/main_back.png) no-repeat center center;
+	background-size: cover;
+}
+/*バックグラウンドカラー*/
+.bg_deepblue {
+	background-color: #005cab;
+	padding-bottom: 0px;
+	padding-top: 45px;
+}
+.bg_blue {
+	background-color: #005cab;
+	padding-bottom: 75px;
+	padding-top: 30px;
+}
+.bg_yellow {
+	background-color: #f6ba00;
+	padding-bottom: 20px;
+	padding-top: 0px;
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+.bg_gray {
+	background-color: #EEEEEE;
+	margin-top: 45px;
+	margin-bottom: -60px;
+	padding-bottom: 60px;
+	padding-top: 30px;
+}
+
+/*テキスト関連*/
+.h2_title {
+	background-color: #005cab;
+	color: white;
+	padding-top: 6px;
+	padding-bottom: 4px;
+}
+.copyright {
+	font-size: 12px;
+	margin-top: 10px;
+}
+.text14px {
+	font-size: 14px;
+}
+.text16px {
+	font-size: 16px;
+}
+.text18px {
+	font-size: 18px;
+}
+.text18px_white {
+	font-size: 18px;
+	color: white;
+}
+.text20px {
+	font-size: 20px;
+}
+.text20px_blue {
+	font-size: 20px;
+	color: #005cab;
+}
+.text22px {
+	font-size: 22px;
+}
+.text22px_red {
+	font-size: 22px;
+	color: red;
+}
+.text28px {
+	font-size: 28px;
+}
+.text32px {
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: -10px;
+}
+.contenttitle {
+	color: #da1a36;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-top: 45px;
+	border-top: solid 1px #da1a36;
+	border-bottom: solid 1px #da1a36;
+}
+dd {
+	font-size: 16px;
+}
+dt {
+	font-size: 16px;
+}
+
+/*動画サイズPCは固定*/
+@media screen and (min-width:1024px) {
+.lb-embed {
+	width: 640px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 45px;
+	text-align: center;
+}
+}
+@media screen and (min-width:1024px) {
+.box_winner > .lb-embed {
+	width: 460px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 45px;
+}
+}
+
+/*改行*/
+/*768px以下の時「for_pc」は非表示、「for_mobile」は表示。*/
+@media screen and (min-width: 768px) {
+.for_pc {
+	display: inline;
+}
+.for_mobile {
+	display: none;
+}
+}
+/*768px以下の時「for_pc」は表示、「for_mobile」は非表示。*/
+@media screen and (max-width: 768px) {
+.for_pc {
+	display: none;
+}
+.for_mobile {
+	display: inline;
+}
+}
+/*フッタ*/
+footer {
+	background-color: #333333;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	color: white;
+	margin-top: 60px;
+}
+/*アコーディオンの色変更*/
+.panel_blue > .panel {
+	border: 3px #005cab solid;
+	border-radius: 0px;
+}
+.panel_blue > .panel-default > .panel-heading {
+	background: #005cab !important;
+	color: #fff !important;
+	border-radius: 0px;
+}
+.panel_blue > .panel-default > .panel-heading {
+	border-color: #005cab !important;
+}
+.panel_red > .panel {
+	border: 3px #da1a36 solid;
+	border-radius: 0px;
+}
+.panel_red > .panel-default > .panel-heading {
+	background: #da1a36 !important;
+	color: #fff !important;
+	border-radius: 0px;
+}
+.panel_red > .panel-default > .panel-heading {
+	border-color: #da1a36 !important;
+}
+.panel-title {
+	font-size: 20px;
+}
+.panel_margin {
+	margin-top: 15px;
+}
+.btn {
+	font-size: 18px !important;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	margin-bottom: 10px !important;
+}
+/*結果発表ページ用*/
+.winner {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-top: 20px;
+	margin-bottom: 45px;
+}
+/*768px以下の時「winner」の左右padding狭く*/
+@media screen and (max-width: 768px) {
+.winner {
+	padding-left: 5px;
+	padding-right: 5px;
+	}
+}
+.winner_title_blue {
+	font-size: 38px;
+	font-weight: bold;
+	margin-bottom: -15px;
+	color: #005cab;
+}
+.winner_title_red {
+	font-size: 38px;
+	font-weight: bold;
+	margin-bottom: -15px;
+	color: #da1a36;
+}
+.text20px_prize {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 5px;
+}
+.box_winner {
+	padding-top: 30px;
+}
+.comment_winner {
+	margin-top: 5px;
+}
+.bg-blue {
+	background-color: #ccdeee;
+	padding: 15px 25px 20px 25px;
+	margin-top: 15px;
+}
+.bg-red {
+	background-color: #f8d1d7;
+	padding: 15px 25px 20px 25px;
+	margin-top: 15px;
+}
+.h2_title_red {
+	background-color: #da1a36;
+	color: white;
+	padding-top: 6px;
+	padding-bottom: 4px;
+}
+.text20px_red {
+	font-size: 20px;
+	color: #da1a36;
+}
+.box_point{
+	border: 3px #da1a36 solid;
+	padding-bottom: 5px;
+}
+
+

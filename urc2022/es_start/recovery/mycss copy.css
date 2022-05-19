@@ -1,0 +1,67 @@
+/* ヘッダー */
+/* ヘッダーイメージ */
+.title_img {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+/* ヘッダーレイアウトが変化したときに文字が重ならないようにする */
+.mainBox {
+	position: relative;
+}
+.subBox {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+/* ページタイトル */
+#voting_top {
+    color: white;
+    background-color: blue;
+}
+
+/* カウントダウンタイマー */
+#voting_period {
+    text-align: center;
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+#CDT {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.timer {
+    background: orange;
+    margin: 5px auto;
+    padding: 5px;
+}
+
+/* ページトップボタン */
+.pagetop{
+    display: none;
+    position: fixed;
+    right: -30px;
+    bottom: 80px;
+}
+
+/* その他img関連 */
+.container img:hover{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+/*テキスト関連*/
+
+
+
+/*フッタ*/
+footer {
+	background-color: #333333;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	color: white;
+	margin-top: 60px;
+}

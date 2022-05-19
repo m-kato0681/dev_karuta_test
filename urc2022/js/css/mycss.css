@@ -1,0 +1,249 @@
+/* ---------------------------------------------------------------------- */
+/* ヘッダーイメージ */
+.title_img {
+	margin-top: 80px;
+	margin-bottom: 10px;
+}
+/* ヘッダーレイアウトが変化したときに文字が重ならないようにする */
+.mainBox {
+	position: relative;
+}
+.subBox {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+/* 検索結果を表示した際のスペース調整 */
+#search_result_space {
+    display: none;
+    margin-top: 70px;
+}
+
+/* ---------------------------------------------------------------------- */
+/* ページタイトル */
+#voting_top_md {
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: blue;
+}
+#voting_top_sm {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background-color: blue;
+}
+/* 検索窓 */
+#search_box {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: lightgray;
+}
+/* 投票期間 */
+#voting_period {
+    font-size: 18px;
+    font-weight: bold;
+}
+/* カウントダウンタイマー */
+#voting_timer {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    background-color: rgb(15, 150, 255);
+}
+#CDT {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+}
+.timer {
+    background: yellow;
+    margin: 5px auto;
+    padding: 5px;
+}
+#timer-container {
+    background-color: rgb(15, 150, 255);
+}
+#comment-container {
+    background-color: rgb(125, 220, 255);
+}
+/* サイト上部のコメント */
+#header_comment {
+    font-weight: bold;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color:rgb(125, 220, 255);
+}
+/* サイト上部の説明文 */
+#header_comment_sub {
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: blue;
+    background-color:rgb(125, 220, 255);
+}
+/* 検索で該当する作品がない場合のコメント */
+#search_notfound_txt {
+    display: none;
+    margin-top: 10px;
+	margin-bottom: 10px;
+}
+/* 検索後に表示する全表示ボタン */
+#search_reset_button {
+    display: none;
+}
+/* 投票後のコメント */
+#after_voting_comment {
+    font-weight: bold;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+/* 投票後の説明 */
+#after_voting_comment_sub {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+/* 投票後に他の作品の閲覧を促す説明 */
+#other_movie_comment {
+    font-size: 20px;
+    margin-top: 20px;
+    color: white;
+    background-color: rgb(15, 150, 255);
+}
+
+/* ---------------------------------------------------------------------- */
+/* ページトップボタン */
+#pagetop {
+    display: none;
+    position: fixed;
+    right: 1rem;
+    bottom: 6.5rem;
+}
+
+/* ---------------------------------------------------------------------- */
+/* FlexBoxでフッタ―をページ最下部に固定する */
+body {
+    display: flex;
+    flex-flow: column; /* 子要素を垂直方向に配置 */
+    min-height: 100vh;
+}
+main {
+    flex: 1; /* 親要素内で最大限に広げる */
+}
+
+/* ---------------------------------------------------------------------- */
+/* その他img関連 */
+/* 投票ボタンやサムネイルなど */
+.container img:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+/* 投票完了、取り消しボタン */
+.container-fluid img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* ---------------------------------------------------------------------- */
+/*テキスト関連*/
+.movie-title {
+    font-size: 16px;
+    font-weight: bold;
+	margin-top: 5px;
+}
+.copyright {
+	font-size: 12px;
+	margin-top: 10px;
+}
+.text14px {
+	font-size: 14px;
+}
+.text16px {
+	font-size: 16px;
+}
+.text18px {
+	font-size: 18px;
+}
+.text18px_white {
+	font-size: 18px;
+	color: white;
+}
+.text20px {
+	font-size: 20px;
+}
+.alert-text {
+    color: rgba(255, 0, 0, 0.8);
+    font-weight: bold;
+}
+/*改行*/
+/*768px以下の時「for_pc」は非表示、「for_mobile」は表示。*/
+@media screen and (min-width: 768px) {
+    .for_pc {
+        display: inline;
+    }
+    .for_mobile {
+        display: none;
+    }
+}
+/*768px以下の時「for_pc」は表示、「for_mobile」は非表示。*/
+@media screen and (max-width: 768px) {
+    .for_pc {
+        display: none;
+    }
+    .for_mobile {
+        display: inline;
+    }
+}
+/* ---------------------------------------------------------------------- */
+/* 固定フッタ―（投票完了・取り消しボタン） */
+#voting_btns_container {
+    background-color: rgb(15, 150, 255);
+}
+/* 余白 */
+#fixed_bottom_margin {
+    background-color: rgb(15, 150, 255);
+    margin-bottom: 0.25rem !important;
+}
+/* 固定フッターの余白調整（PCレイアウト時のみ表示） */
+#fixed_bottom_margin_pc {
+    background-color: rgb(15, 150, 255);
+    margin-top: 0.25rem !important;
+}
+/* ---------------------------------------------------------------------- */
+/*フッター*/
+footer {
+	background-color: #333333;
+	padding-top: 25px;
+	padding-bottom: 20px;
+	color: white;
+}
+/* 固定フッターに被らないようにするための余白 */
+footer #bottom_margin {
+    background-color: #333333;
+    margin-bottom: 8vw !important;
+}
+/* 固定フッターに被らないようにするための余白（スマホレイアウト時のみ表示） */
+footer #bottom_margin_mobile {
+    background-color: #333333;
+    margin-bottom: 30vw !important;
+}
+
+#spacer {
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+/* 固定フッターに被らないようにするための余白（色なし） */
+#spacer #bottom_margin {
+    margin-bottom: 8vw !important;
+}
+/* 固定フッターに被らないようにするための余白（スマホレイアウト時のみ表示）（色なし） */
+#spacer #bottom_margin_mobile {
+    margin-bottom: 30vw !important;
+}
+/* ---------------------------------------------------------------------- */
