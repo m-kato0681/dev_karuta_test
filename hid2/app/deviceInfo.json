@@ -1,0 +1,32 @@
+{
+    "studuino-mini": {
+        "reportCount": 8,
+        "vid": 8352,
+        "pid": 17000
+    },
+    "lantern": {
+        "reportCount": 8,
+        "vid": 8352,
+        "pid": 17060
+    },
+    "pgcon": {
+        "reportCount": 8,
+        "vid": 8352,
+        "pid": 17061
+    },
+    "bt-speaker": {
+        "reportCount": 27,
+        "vid": 8352,
+        "pid": 17077
+    },
+    "robo-cleaner": {
+        "reportCount": 8,
+        "vid": 8352,
+        "pid": 17078
+    },
+    "studuino-lite": {
+        "reportCount": 8,
+        "vid": 8352,
+        "pid": 17079
+    }
+}

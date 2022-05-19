@@ -1,0 +1,15 @@
+{
+    "COMMAND": {
+        "LED_CONTROL": "1",
+        "BUZZER_ON": "2",
+        "BUZZER_OFF": "3",
+        "MODE_CHANGE": "4"
+    },
+    "DATA": {
+        "Bluetooth": 1,
+        "FM": 2,
+        "Voice": 3,
+        "clockwise": 0,
+        "counter-clockwise": 1
+    }
+}
