@@ -1,0 +1,18 @@
+{
+    "COMMAND": {
+        "MOTOR_CONTROL": "0x10",
+        "MOTOR_POWER": "0x11",
+        "MOTION_ROTATION": "0x20",
+        "MOTION_TURN": "0x21",
+        "MOTION_LINEAR": "0x22"
+    },
+    "DATA": {
+        "L": 0,
+        "R": 1,
+        "clockwise": 0,
+        "counter_clockwise": 1,
+        "FORWARD": 0,
+        "BACKWARD": 1,
+        "STOP": 2
+    }
+}
